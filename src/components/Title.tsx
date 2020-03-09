@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Title: React.SFC<{ title: string}> = ({ title }) => (
+type TitleProps = { title: string }
+const Title: React.SFC<TitleProps> = ({ title }) => (
   <div className="title-container">
     <h4>{title}</h4>
   </div>
